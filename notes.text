@@ -1,0 +1,71 @@
+project name siajlab
+
+stack: mern stack.
+
+mangoDb express react node.
+
+
+type of users: admin, user.
+
+two front-end
+1- dashbord list users information, mange users, get notification from user if the user get out of his boundry or his tempratare.
+* Users added by admin they get sms with login info.
+user:
+#0- userId
+#1- national address.
+#2- national id.
+#3- register date.
+#4- assaign hostpital
+#5- user body temperature.
+#6- location.
+#7- viaolation [{ type: , date}]
+
+userTemperature:
+#1- userId
+#2- temperature
+#3- date.
+
+
+conversations:
+#0- conersationId.
+#1- messages[{ senderId, text, date }].
+#2- userId
+#3- adminID.
+#4- message.
+#5- created
+#6- lastUpdated
+
+
+
+
+
+2- read incoming messages from users.
+3- send messages user.
+4- alert system (get notfication when a user get out of boundry).
+
+
+ 
+Mobile app login user, send notification
+*login screen.
+*home page. (it will display user info and when we wll relase you).
+- start conversation.
+- record temprature.
+- emergincy call.
+ 
+user data:
+1- home address.
+2- national id.
+
+
+
+
+as a user have a
+
+the app should track my location in the background.
+if the user leave the geolaction that specified for him the addmin will git notification
+
+the app should have temperatare tracking
+
+the app should contact the authority organisation if the user have emerginacy.
+
+
